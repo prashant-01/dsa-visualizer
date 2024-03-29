@@ -40,7 +40,7 @@ const handleDispatch = (toDispatch, dispatch, array , speed) => {
             dispatch(setCurrentComparison([]));
             dispatch(setCurrentSorted(array.map((_, index) => index)));
             dispatch(setIsRunning(false));
-        }, 200);
+        }, 1000);
         return;
     }
     let dispatchFunction = toDispatch[0].length > 3 ?
